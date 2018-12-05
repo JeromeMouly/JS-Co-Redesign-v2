@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+        onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small">ABOUT</a>
+      <a href="#events" class="w3-bar-item w3-button w3-hide-small">EVENTS</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    </div>
+  </div>
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span>
+        LOGO</span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <div class="w3-row">
+      <div class="w3-content w3-container w3-center">
+        <h1 class="title-section">Que sommes nous ?</h1>
+        <div class="esperluette-bar2"></div>
+        <div class="esperluette-circle2">
+          <div class="esperluette-incircle2">&</div>
+        </div>
+        <h5 class="subtext-section">Une association Loi 1901 au service des développeurs et des entrepreneurs.</h5>
+      </div>
+      <div class="w3-content w3-container w3-center about-block-section">
+        <div class="w3-half w3-padding-48 about-block">
+          <div class="about-text">
+            <h2 class="about-title">Un Réseau</h2>
+            <hr class="about-divider-title">
+            <p class="about-text">Nous sommes avant tout un réseau de développeurs et d'entrepreneurs
+              réunis autour des nouvelles technologies du JavaScript. Le point central que nous sommes
+              permet à
+              ces deux mondes d'échanger leurs connaissances.</p>
+          </div>
+        </div>
+        <div class="w3-half w3-padding-48 about-block">
+          <img src="assets/images/reseau.svg" alt="Logo Réseau" class="about-icon">
+        </div>
+      </div>
+      <div class="w3-content w3-container w3-center">
+        <hr class="about-divider">
+      </div>
+      <div class="w3-content w3-container w3-center about-block-section">
+        <div class="w3-half w3-padding-48 about-block">
+          <img src="assets/images/expert.svg" alt="Logo Expert" class="about-icon">
+        </div>
+        <div class="w3-half w3-padding-48 about-block">
+          <div class="about-text">
+            <h2 class="about-title">Une Expertise</h2>
+            <hr class="about-divider-title">
+            <p class="about-text">Développement, expérience utilisateur, design, graphisme et business
+              autour du web. Nos membres et notre environnement réunissent des experts autour de Toulouse
+              ayant de multiples compétences à partager.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-content w3-container w3-center">
+        <hr class="about-divider">
+      </div>
+      <div class="w3-content w3-container w3-center about-block-section">
+        <div class="w3-half w3-padding-48 about-block">
+          <div class="about-text">
+            <h2 class="about-title">Des Développeurs</h2>
+            <hr class="about-divider-title">
+            <p class="about-text">Nous essayons d'apprendre constamment les dernières technologies
+              JavaScript afin de pouvoir conseiller et former correctement nos membres. Nous appliquons
+              également nos connaissances dans des cas de production afin de tester les technologies et
+              leur limites.</p>
+          </div>
+        </div>
+        <div class="w3-half w3-padding-48 about-block">
+          <img src="assets/images/code.svg" alt="Logo Développeur" class="about-icon">
+        </div>
+      </div>
+      <div class="w3-content w3-container w3-center">
+        <hr class="about-divider">
+      </div>
+      <div class="w3-content w3-container w3-center about-block-section">
+        <div class="w3-half w3-padding-48 about-block">
+          <img src="assets/images/business.svg" alt="Logo Entrepreneurs" class="about-icon">
+        </div>
+        <div class="w3-half w3-padding-48 about-block">
+          <div class="about-text">
+            <h2 class="about-title">Des Entrepreneurs</h2>
+            <hr class="about-divider-title">
+            <p class="about-text">Le panel de domaines est très varié. Hebergement web, la restauration, en
+              passant par le e-commerce ou la démocratie en ligne. Les conseils avisés de nos
+              entrepreneurs couvre un large éventails de possibilités.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-content w3-container w3-center">
+        <hr class="about-divider">
+      </div>
+      <div class="w3-content w3-container w3-center about-block-section">
+        <div class="w3-half w3-padding-48 about-block">
+          <div class="about-text">
+            <h2 class="about-title">Des Evénements</h2>
+            <hr class="about-divider-title">
+            <p class="about-text">Suite à la réussite du CodeFest de 2017, nous avons pour projet
+              d'organiser un autre autre hackathon dans les prochains mois et d'en faire une habitude.
+              Lighting talk, retour d'expériences ou simple rencontre autour d'un verre, tenez vous au
+              courant sur Facebook ou Meetup.</p>
+          </div>
+        </div>
+        <div class="w3-half w3-padding-48 about-block">
+          <img src="assets/images/screen.svg" alt="Logo Events" class="about-icon">
+        </div>
+      </div>
+      <div class="w3-content w3-container w3-center">
+        <hr class="about-divider">
+      </div>
+      <div class="w3-content w3-container w3-center about-block-section">
+        <div class="w3-half w3-padding-48 about-block">
+          <img src="assets/images/formation.svg" alt="Logo Formations" class="about-icon">
+        </div>
+        <div class="w3-half w3-padding-48 about-block">
+          <div class="about-text">
+            <h2 class="about-title">Des Formations</h2>
+            <hr class="about-divider-title">
+            <p class="about-text">Notre gros projet est de faire des formations d'initiation pour les
+              débutants ou d'amélioration pour les plus aguerris. Ceci afin de répandre l'utilisation du
+              JavaScript de façon ludique et le moins cher possible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+  </div>
+
+  <!-- Events -->
+  <section id="events">
+    <div class="w3-row">
+      <div class="w3-content w3-container w3-center">
+        <h1 class="title-section">Evènements <span class="esperluette">&</span> Now</h1>
+        <div class="esperluette-bar2"></div>
+        <div class="esperluette-circle2">
+          <div class="esperluette-incircle2">&</div>
+        </div>
+      </div>
+      <div class="w3-content w3-container w3-center">
+        <hr class="about-divider">
+      </div>
+      <div class="w3-content w3-container events-block-section">
+        <div class="w3-half w3-container events-block">
+          <p class="events-text">Js&Co c'est aussi des évènements aux nombreux sujets variés autour du
+            JavaScript forcément. Mais il nous arrive aussi de parler d'entreprenariat, d'évolution de
+            technologies, de sécurité et plus encore. Souvent basé à NovaMelée (anciennement La Cantine),
+            nous réunissons des développeurs, des CTO, des CEO, des curieux, des super héros parfois.</p>
+        </div>
+        <div class="w3-half w3-container events-block">
+          <p class="events-text">Nos Speakers viennent souvent du milieu technique, mais certains sortent du
+            lot et nous expliquent leur parcours atypique.
+            Tiens toi au courant de ce qui se passe chez nous, car tu peux trouver un job ou encore
+            embaucher un profil que tu recherchais depuis longtemps, trouver un associé ou juste passer
+            boire un verre avec nous afin d'échanger et de rencontrer la communauté.</p>
+        </div>
+      </div>
+      <div class="w3-content w3-container w3-center">
+        <hr class="about-divider">
+      </div>
+      <div class="w3-container w3-content w3-center w3-padding-64 events-block">
+        <div class="w3-third w3-content w3-center event-card-block">
+          <div class="event-img-block">
+            <img src="assets/images/battle-img.jpg" class="event-img lazyload" />
+          </div>
+          <div class="event-details">
+            <div class="w3-center event-text-block">
+              <p class="meetup-date">6 novembre 2018</p>
+              <a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417283/" class="event-link">
+                <h4 class="events-title">JS & BATTLE / BATTLE DEV 2018</h4>
+              </a>
+              <p class="meetup-text">Oyez oyez combattants et gladiateurs de toutes régions,Le BattleDev
+                est enfin à l'horizon.Le 6 Novembre 2018 nous nous réunirons et en JavaScript nous...</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third event-card-block">
+          <div class="event-img-block">
+            <img src="assets/images/code-meteor-img.jpg" class="event-img lazyload" />
+          </div>
+          <div class="event-details">
+            <div class="w3-center event-text-block">
+              <p class="meetup-date">26 octobre 2018</p>
+              <a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417085/" class="event-link">
+                <h4 class="events-title">LA TETE DANS LES ETOILES, LE CODE DANS METEOR</h4>
+              </a>
+              <p class="meetup-text">Vous êtes nombreux à vous demander ce qu'on peut faire avec Meteor.
+                Et vous n'êtes pas les seuls ! Au programme : présentation de Meteor et ses
+                possibilités ...</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third event-card-block">
+          <div class="event-img-block">
+            <img src="assets/images/node-to-meteor-img.jpg" class="event-img lazyload" />
+          </div>
+          <div class="event-details">
+            <div class="w3-center event-text-block">
+              <p class="meetup-date">25 juillet 2018</p>
+              <a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/252191176/" class="event-link">
+                <h4 class="events-title">DE NODEJS A METEOR : OBSTACLES ET EVOLUTIONS</h4>
+              </a>
+              <p class="meetup-text">Au fur et à mesure de leur développement, les plateformes web
+                changent plusieurs fois de technologies et doivent répondre à des besoins en constante
+                évolution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-content w3-container w3-center">
+        <hr class="about-divider">
+      </div>
+      <div class="w3-content w3-container w3-center">
+        <h2 class="latest-vid">Notre Dernière Vidéo</h2>
+        <h4 class="events-title-video">LA TETE DANS LES ETOILES, LE CODE DANS METEOR</h4>
+        <div class="event-vid-block">
+          <iframe width="100%" height="532" src="https://www.youtube-nocookie.com/embed/AyLb1puqV5s?start=1"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen class="event-vid"></iframe>
+        </div>
+      </div>
+      <div class="w3-content w3-container w3-center">
+        <hr class="about-divider">
+      </div>
+    </div>
+  </section>
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="w3-row">
+      <div class="w3-content w3-container w3-center block-title-section">
+        <h1 class="title-section">Nous Contacter</h1>
+        <div class="esperluette-bar2"></div>
+        <div class="esperluette-circle2">
+          <div class="esperluette-incircle2">&</div>
+        </div>
+        <h5 class="subtext-section">Tous les moyens de nous contacter ou de nous rencontrer.</h5>
+      </div>
+      <div class="w3-container w3-center w3-padding-64">
+        <div class="w3-col s12 m2 l2">
+          <div class="block-social w3-center">
+            <div class="list-social w3-center">
+              <a href="https://www.meetup.com/fr-FR/JavaScript-and-Co" class="link-social contact-meetup">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-meetup contact-social-icon" aria-hidden="false"></i>
+              </a>
+            </div>
+          </div>
+          <p class="w3-container contact-social-text" style="text-align:justify;padding-bottom:50px">Du
+            lighting talk au hackaton, en passant par la formation ou le retour d'expérience. Nous
+            organisons de nombreux évènements tout au long de l'année sur des sujets variés autour du web.</p>
+        </div>
+        <div class="w3-col s12 m2 l2">
+          <div class="block-social w3-center">
+            <div class="list-social w3-center">
+              <a href="https://twitter.com/JS_and_Co" class="link-social contact-twitter">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-twitter contact-social-icon" aria-hidden="false"></i>
+              </a>
+            </div>
+          </div>
+          <p class="w3-container contact-social-text" style="text-align:justify;padding-bottom:50px">Rejoignez
+            nous sur Twitter, nous partageons les évènements sur notre page. Mais également des articles
+            intéressants sur le développement web et l'entreprenariat.</p>
+        </div>
+        <div class="w3-col s12 m2 l2">
+          <div class="block-social w3-center">
+            <div class="list-social w3-center">
+              <a href="https://www.facebook.com/js.and.co.association/" class="link-social contact-facebook">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-facebook-f contact-social-icon" aria-hidden="false"></i>
+              </a>
+            </div>
+          </div>
+          <p class="w3-container contact-social-text" style="text-align:justify;padding-bottom:50px">Rejoignez
+            nous sur Facebook, nous partageons les évènements sur notre page. Mais également des articles
+            intéressants sur le développement web et l'entreprenariat.</p>
+        </div>
+        <div class="w3-col s12 m2 l2">
+          <div class="block-social w3-center">
+            <div class="list-social w3-center">
+              <a href="https://www.youtube.com/channel/UCjxZWyxGIR3Yx8Lb1Sc-ukA" class="link-social contact-youtube">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-youtube-play contact-social-icon" aria-hidden="false"></i>
+              </a>
+            </div>
+          </div>
+          <p class="w3-container contact-social-text" style="text-align:justify;padding-bottom:50px">Vous
+            n'avez pas pu assister à un de nos événements ? Retrouvez nos meetup sur notre chaîne Youtube
+            et n'hésitez pas à nous laisser un petit commentaires.</p>
+        </div>
+        <div class="w3-col s12 m2 l2">
+          <div class="block-social w3-center">
+            <div class="list-social w3-center">
+              <a href="https://github.com/jsandco" class="link-social contact-github">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-github contact-social-icon" aria-hidden="false"></i>
+              </a>
+            </div>
+          </div>
+          <p class="w3-container contact-social-text" style="text-align:justify;padding-bottom:50px">Notre
+            compte Github contient nos packages mis en communs, le code de ce site internet mais également
+            certains boilerplates en javascript. Nos cours et formations seront aussi mis a disposition
+            dans cet espace commun.</p>
+        </div>
+        <div class="w3-col s12 m2 l2">
+          <div class="block-social">
+            <div class="list-social">
+              <a href="#" class="link-social">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-envelope-o contact-social-icon" aria-hidden="false"></i>
+              </a>
+            </div>
+          </div>
+          <p class="w3-container contact-social-mail">contact<br><span style="color:#FFF">@</span><br>jsandco.org</p>
+        </div>
+      </div>
+      <div class=" w3-container w3-center block-maps-section" style="padding-top:50px">
+        <div class="esperluette-bar2"></div>
+        <div class="esperluette-circle2">
+          <div class="esperluette-incircle2">&</div>
+        </div>
+        <h1 style="color:#FFDB00;padding-top:25px;font-weight: bold">Nous Rencontrer</h1>
+        <p class="contact-rencontre-text">Vous souhaitez venir nous rendre visite, en savoir plus sur JS<span style="color:#FFF">&</span>Co
+          ? <br> Venez discuter avec nous.</p>
+      </div>
+      <div class="contact-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.184969671617!2d1.452030015836234!3d43.60269016371291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebc909187de31%3A0xf9ac6ee6a2be22ce!2s27+Rue+d&#39;Aubuisson%2C+31000+Toulouse!5e0!3m2!1sfr!2sfr!4v1542269543419"
+          width="100%" height="450" frameborder="0" style="border:0" allowfullscreen class="lazyload" title="map-JS&Co"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="w3-container">
+      <div class="w3-quarter w3-center">
+        <div class="become-members">
+          <h4 class="become-members-title">Rejoindre JS <span class="esperluette">&amp;</span> Co</h4>
+          <h6>Vous souhaitez rejoindre notre association et participer à nos différents évènements</h6>
+        </div>
+        <div class="become-members-btn-section">
+          <button class="become-members-btn" onclick="document.getElementById('becomeMembers').style.display='block'">Devenir
+            Membre</button>
+        </div>
+      </div>
+      <div class="w3-quarter w3-center">
+        <h4 class="sitemap">SiteMap</h4>
+        <ul>
+          <li><a href="#about" class="menu-link">About</a></li>
+          <li><a href="#members" class="menu-link">Members</a></li>
+          <li><a href="#events" class="menu-link">Events</a></li>
+          <li><a href="#jsbc" class="menu-link">JS&BC</a></li>
+          <li> <a href="#partners" class="menu-link">Partners</a></li>
+          <li><a href="#contact" class="menu-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="w3-quarter w3-center">
+        <h4 class="become-members-title">Derniers Evénements</h4>
+        <ul>
+          <li class="footer-last-events" style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417283/">JS
+              & BATTLE / BATTLEDEV 2018</a></li>
+          <li class="footer-last-events" style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417085/">LA
+              TETE DANS LES ETOILES, LE CODE DANS METEOR</a></li>
+          <li class="footer-last-events" style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/252191176/">DE
+              NODEJS A METEOR : OBSTACLES ET EVOLUTION</a></li>
+        </ul>
+      </div>
+      <div class="w3-quarter w3-center">
+        <h4 class="follow">Nous suivre</h4>
+        <ul>
+          <li style="padding-bottom:5px">
+            <a href="https://twitter.com/JS_and_Co?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
+              data-lang="fr" data-dnt="true" data-show-count="false">Follow @JS_and_Co</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </li>
+          <li style="padding-bottom:10px">
+            <div class="fb-like" data-href="https://www.facebook.com/js.and.co.association/" data-layout="button"
+              data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+          </li>
+          <li style="padding-bottom:5px">
+            <div class="g-ytsubscribe" data-channelid="UCjxZWyxGIR3Yx8Lb1Sc-ukA" data-layout="default" data-count="hidden"></div>
+          </li>
+          <li style="padding-bottom:10px">
+            <a class="github-button" href="https://github.com/jsandco" data-size="large" aria-label="Follow @jsandco on GitHub">Follow
+              @jsandco</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="subfooter-section">
+      <div class="w3-content w3-container w3-center subfooter">
+        <p class="subfooter-text">&copy; Javascript & Co 2018 || Developed & Designed with &hearts;
+          <br> by Mexar and JMWebdesign. || <a href="assets/pages/mentions.html" class="mentions">Mentions Légales</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/lazysizes.min.js" async defer></script>
+  <script src="https://www.w3schools.com/lib/w3.js" async defer></script>
+  <script src="assets/js/app.js" async defer></script>
+  <div id="fb-root"></div>
+  <script>
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.2';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script src="https://apis.google.com/js/platform.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</body>
+
+</html>
