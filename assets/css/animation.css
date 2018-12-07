@@ -1,0 +1,66 @@
+/* ----- HERO Animation ----- */
+
+.hero-title-expand {
+    -webkit-animation: tracking-in-expand 1.50s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: tracking-in-expand 1.50s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text-focus-in {
+    -webkit-animation: text-focus-in 1.75s ease-in 0.75s both;
+    animation: text-focus-in 1.75s ease-in 0.75s both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+/* ----- END HERO Animation ----- */

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript & Co || Association de développeurs et d'entrepreneurs</title>
+    <meta name="description" content="JS&amp;Co. Nous sommes avant tout un réseau de développeurs et d'entrepreneurs réunis autour des nouvelles technologies du JavaScript.">
+    <meta name="author" content="Mexar, JérômeMouly">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/animation.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <link rel="stylesheet" href="../css/scrollbar.css">
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- MODAL BECOME MEMBERS -->
+    <div id="becomeMembers" class="w3-modal become-members-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container become-members-modal-header">
+                <span onclick="document.getElementById('becomeMembers').style.display='none'" class="w3-button w3-display-topright close-btn-modal">&times;</span>
+                <h2>Devenir Membre et/ou Faire un Don</h2>
+            </header>
+            <div class="">
+                <!-- <span onclick="document.getElementById('becomeMembers').style.display='none'" class="w3-button w3-display-topright">&times;</span> -->
+                <div class="breadcrumb-modal-become-members flat">
+                    <a href="#" class="active" style="width:25%"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;Choix
+                        de l'adhésion</a>
+                    <a href="#" style="width:25%"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Adhérents</a>
+                    <a href="#" style="width:25%"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Récapitulatif</a>
+                    <a href="#" style="width:25%"><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp;&nbsp;Finalisation</a>
+                </div>
+            </div>
+            <div class="w3-container become-members-modal-text">
+                <div class="become-members-payments">
+                    <h3><strong>Cotisation Membre</strong></h3>
+                    <div class="w3-col s12 m8 l8">
+                        <p>Vous devenez membre de JS&Co et obtenez des réductions aux formations et aux événements
+                            payants.</p>
+                    </div>
+                    <div class="w3-col s12 m2 l2 w3-center">
+                        <h2><strong>30 €</strong></h2>
+                    </div>
+                    <div class="w3-col s12 m2 l2 w3-center">
+                        <div class="w3-container w3-center" style="margin-top:15px">
+                            <select class="w3-select w3-border" name="option" style="background-color:#22292F;color:#FFDB00">
+                                <option value="0" disabled selected>Quantité</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="modal-divider">
+            <div class="w3-content w3-container w3-center">
+                <h3><strong>Avez-vous un code promo* ?</strong></h3>
+                <div class="w3-row w3-content w3-container w3-center">
+                    <div class="w3-twothird">
+                        <input class="w3-input w3-border" type="text" placeholder="Code Promo" style="width:268px;margin-left:205px">
+                    </div>
+                    <div class="w3-third" style="margin-left: -205px;">
+                        <button class="w3-right add-btn-modal">Ajouter</button>
+                    </div>
+                </div>
+                <p>* Attention, les codes promo ne sont pas valables pour les dons.</p>
+            </div>
+            <hr class="modal-divider">
+            <div class="w3-content w3-container w3-center">
+                <h3><strong>Souhaitez-vous ajouter un don à <span style="color:#FFDB00">JS&Co</span>
+                        en plus de votre adhésion ?</strong></h3>
+            </div>
+            <div class="w3-content w3-container w3-center">
+                <div class="w3-quarter">
+                    <label class="container">Pas de Don
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="w3-quarter">
+                    <label class="container">5 &euro;
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="w3-quarter">
+                    <label class="container">10 &euro;
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="w3-quarter">
+                    <label class="container">20 &euro;
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="w3-half">
+                    <label class="container">Montant de votre choix :
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="w3-half">
+                    <input class="w3-input w3-border" type="text" placeholder="Votre Montant">
+                </div>
+            </div>
+            <hr class="modal-divider">
+            <div class="w3-content w3-container total" style="text-align:right">
+                <h4 class="show-amount">Montant à payer pour la durée de l'adhésion : <span style="text-decoration:underline"><strong>0.00
+                            &euro;</strong></span></h4>
+            </div>
+            <footer class="w3-container become-members-modal-footer">
+                <button class="w3-right validate-btn-modal">Etape Suivante</button>
+            </footer>
+        </div>
+    </div>
+
+    <!-- TOPBAR -->
+    <div id="topBar" class="w3-row topbar">
+        <div class="w3-center">
+            <a href="../../index.html" class="home-link">&amp;</a>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div id="firstMenu" class="w3-top">
+        <div class="w3-bar w3-center navbar">
+            <a href="../../index.html#about" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">About</a>
+            <a href="../../index.html#members" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Members</a>
+            <a href="../../index.html#events" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Events</a>
+            <a href="../../index.html#jsbc" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">JS&BC</a>
+            <a href="../../index.html#partners" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Partners</a>
+            <a href="../../index.html#contact" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Contact</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium burger-menu"
+                onclick="myFunction()">&#9776;</a>
+        </div>
+        <div id="navBar" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+            <a href="../../index.html#about" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">About</a>
+            <a href="../../index.html#members" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">Members</a>
+            <a href="../../index.html#events" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">Events</a>
+            <a href="../../index.html#jsbc" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">JS&BC</a>
+            <a href="../../index.html#partners" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">Partners</a>
+            <a href="../../index.html#contact" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">Contact</a>
+        </div>
+    </div>
+
+    <section id="members-page">
+        <div class="w3-row">
+            <div class="w3-content w3-container w3-center block-title-section-page">
+                <h1 class="title-section">Members <span class="esperluette-members">&</span> Co</h1>
+                <div class="esperluette-bar"></div>
+                <div class="esperluette-circle">
+                    <div class="esperluette-incircle">&</div>
+                </div>
+                <h5 class="subtext-section">Voici la liste de nos membres actuels. N'hésite pas a nous rejoindre</h5>
+                <div class="become-members-btn-section-page">
+                    <button class="become-members-btn-page" onclick="document.getElementById('becomeMembers').style.display='block'">Devenir
+                        Membre</button>
+                </div>
+            </div>
+            <div class="w3-content w3-container w3-center w3-padding-64">
+                <div class="w3-third" style="padding-bottom:20px">
+                    <aside class="members-card-page">
+                        <header class="members-view-page">
+                            <img src="../images/francois-small.jpg" alt="Photo de François AUBEUT-GERVAISE" aria-label="Photo de François AUBEUT-GERVAISE"
+                                class="members-img-page lazyload">
+                            <h1 class="members-name-page">François AUBEUT-GERVAISE</h1>
+                            <h2 class="members-function-page">Président</h2>
+                        </header>
+                        <div class="members-profile-page" style="text-align:left">
+                            <p style="text-align:left">Développeur Web & App</p>
+                            <p>#METEORJS - #REACT - #HYPERAPP <br> #WEBDESIGN - #KRAKEN</p>
+                            <p class="members-function-page"><img src="../images/mexar-logo.gif" alt="Logo Mexar"
+                                    aria-label="Logo Mexar" class="entreprise w3-circle lazyload"> MeXaR - CEO</p>
+                        </div>
+                        <div class="members-date-page">
+                            <p>Membre depuis Juin 2017</p>
+                        </div>
+                        <div class="members-social-page">
+                            <div class="w3-half">
+                                <a href="https://mexar.fr/"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="w3-half">
+                                <a href="https://github.com/MeXaaR/"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="w3-third" style="padding-bottom:20px">
+                    <aside class="members-card-page">
+                        <header class="members-view-page">
+                            <img src="../images/jimmy-small.jpg" alt="Photo de Jérémy SIMONKLEIN-ANGELY" aria-label="Photo de Jérémy SIMONKLEIN-ANGELY"
+                                class="members-img-page lazyload">
+                            <h1 class="members-name-page">Jérémy SIMONKLEIN-ANGELY</h1>
+                            <h2 class="members-function-page">Secrétaire</h2>
+                            <p class="members-function-page"><img src="../images/jsandco-logo.gif" alt="Logo JS&Co"
+                                    aria-label="Logo JS&Co" class="members-founder w3-circle lazyload"> Co-Fondateur</p>
+                        </header>
+                        <div class="members-profile-page" style="text-align:left">
+                            <p style="text-align:left">Développeur Web & App</p>
+                            <p>#METEORJS - #REACT - #GESTION DE PROJET - #FORMATION</p>
+                            <p class="members-function-page"><img src="../images/myopencity-logo.gif" alt="Logo Myopencity"
+                                    aria-label="Logo Myopencity" class="entreprise w3-circle lazyload"> Myopencity -
+                                CEO</p>
+                            <p class="members-function-page"><img src="../images/steadycook-logo.gif" alt="Logo Steadycook"
+                                    aria-label="Logo Steadycook" class="entreprise w3-circle lazyload"> Steadycook -
+                                CTO</p>
+                        </div>
+                        <div class="members-date-page">
+                            <p>Membre depuis Septembre 2016</p>
+                        </div>
+                        <div class="members-social-page">
+                            <div class="w3-col s3 m3 l3">
+                                <a href="https://steadycook.fr/"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="w3-col s3 m3 l3">
+                                <a href="https://github.com/jimmy4701"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="w3-col s3 m3 l3">
+                                <a href="https://twitter.com/JSimonklein"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="w3-col s3 m3 l3">
+                                <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-simonklein-angely/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="w3-third" style="padding-bottom:20px">
+                    <aside class="members-card-page">
+                        <header class="members-view-page">
+                            <img src="../images/thibault-small.jpg" alt="Photo de Thibaut LEFORT" aria-label="Photo de Thibaut LEFORT"
+                                class="members-img-page lazyload">
+                            <h1 class="members-name-page">Thibaut LEFORT</h1>
+                            <h2 class="members-function-page">Trésorier</h2>
+                            <p class="members-function-page"><img src="../images/jsandco-logo.gif" alt="Logo JS&Co"
+                                    aria-label="Logo JS&Co" class="members-founder w3-circle lazyload"> Fondateur</p>
+                            <div class="members-profile-page" style="text-align:left">
+                                <p style="text-align:left">Commercial</p>
+                                <p>#COMMERCE - #AFFILIATION <br> #CRYPTO-MONNAIE</p>
+                            </div>
+                            <div class="members-date-page">
+                                <p>Membre depuis Septembre 2016</p>
+                            </div>
+                    </aside>
+                </div>
+            </div>
+            <div class="w3-content w3-container w3-center">
+                <div class="esperluette-bar"></div>
+                <div class="esperluette-circle">
+                    <div class="esperluette-incircle">&</div>
+                </div>
+            </div>
+            <div class="w3-container w3-center w3-padding-64">
+                <div class="w3-col s12 m2 l2" style="padding-bottom:20px">
+                    <aside class="members-card-page">
+                        <header class="members-view-page">
+                            <img src="../images/david-small.jpg" alt="Photo de David PANART" aria-label="Photo de David PANART"
+                                class="members-img-page">
+                            <h1 class="members-name-page">David PANART</h1>
+                            <h2 class="members-function-page">Contributeur</h2>
+                            <p class="members-function-page"><img src="../images/jsandco-logo.gif" alt="Logo JS&Co"
+                                    aria-label="Logo JS&Co" class="members-founder w3-circle lazyload"> Co-Fondateur</p>
+                        </header>
+                        <div class="members-profile-page" style="text-align:left">
+                            <p style="text-align:left">Développeur Web & App</p>
+                            <p>#METEORJS - #REACT - #REACTNATIVE #APPOLO - #GRAPHQL</p>
+                            <p class="members-function-page"><img src="../images/txm-logo.gif" alt="Logo Tech Ex Machina"
+                                    aria-label="Logo Tech Ex Machina" class="entreprise w3-circle lazyload"> Tech Ex Machina -
+                                CEO</p>
+                        </div>
+                        <div class="members-date-page">
+                            <p>Membre depuis Septembre 2016</p>
+                        </div>
+                        <div class="members-social-page">
+                            <div class="w3-col s3 m3 l3">
+                                <a href="https://techexmachina.com/"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="w3-col s3 m3 l3">
+                                <a href="https://github.com/Fen747"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="w3-col s3 m3 l3">
+                                <a href="https://twitter.com/TechExMachina"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="w3-col s3 m3 l3">
+                                <a href="https://www.linkedin.com/in/david-panart-b0b07282/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="w3-col s12 m2 l2" style="padding-bottom:20px">
+                    <aside class="members-card-page">
+                        <header class="members-view-page">
+                            <img src="../images/jerome-small.jpg" alt="Photo de Jérôme MOULY" aria-label="Photo de Jérôme MOULY"
+                                class="members-img-page lazyload">
+                            <h1 class="members-name-page">Jérôme MOULY</h1>
+                            <h2 class="members-function-page">Contributeur</h2>
+                            <p class="members-function-page"><img src="../images/jsandco-logo.gif" alt="Logo JS&Co"
+                                    aria-label="Logo JS&Co" class="members-founder w3-circle lazyload"> Co-Fondateur</p>
+                        </header>
+                        <div class="members-profile-page" style="text-align:left">
+                            <p style="text-align:left">Webdesigner</p>
+                            <p>#WEBDESIGN - #COMMUNICATION - #RP - #COMMERCE</p>
+                            <p class="members-function-page"><img src="../images/jmw-logo.gif" alt="Logo Jérôme MOULY Webdesign"
+                                    aria-label="Logo Jérôme MOULY Webdesign" class="entreprise w3-circle lazyload"> Jérôme Mouly Webdesign</p>
+                        </div>
+                        <div class="members-date-page">
+                            <p>Membre depuis Septembre 2016</p>
+                        </div>
+                        <div class="members-social-page">
+                            <div class="w3-col s3 m3 l3">
+                                <a href="http://jeromemouly.github.io/"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="w3-col s3 m3 l3">
+                                <a href="https://github.com/JeromeMouly"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="w3-col s3 m3 l3">
+                                <a href="https://twitter.com/JeromeMouly"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="w3-col s3 m3 l3">
+                                <a href="https://www.linkedin.com/in/jerome-mouly-49188833/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="w3-col s12 m2 l2" style="padding-bottom:20px">
+                    <aside class="members-card-page">
+                        <header class="members-view-page">
+                            <img src="../images/simon-small.jpg" alt="Photo de Simon FAUX" aria-label="Photo de Simon FAUX"
+                                class="members-img-page lazyload">
+                            <h1 class="members-name-page">Simon FAUX</h1>
+                            <h2 class="members-function-page">Contributeur</h2>
+                        </header>
+                        <div class="members-profile-page" style="text-align:left">
+                            <p style="text-align:left">Assistant Concepteur-Rédacteur (stage)</p>
+                            <p>#PUBLICITE - #MARKETING - #COMMUNICATION</p>
+                            <p class="members-function-page"><img src="../images/verywell-logo.gif" alt="Logo Agence VeryWell"
+                                aria-label="Logo Agence VeryWell" class="entreprise w3-circle lazyload"> Etudiant ISEG - Agence VeryWell (stage)</p>
+                        </div>
+                        <div class="members-date-page">
+                            <p>Membre depuis Février 2017</p>
+                        </div>
+                        <div class="members-social-page">
+                            <div class="w3-col s6 m6 l6">
+                                <a href="https://twitter.com/SimonFAUX2"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="w3-col s6 m6 l6">
+                                <a href="https://www.linkedin.com/in/simon-faux-170327110/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="w3-col s12 m2 l2" style="padding-bottom:20px">
+                    <aside class="members-card-page">
+                        <header class="members-view-page">
+                            <img src="../images/lea-small.jpg" alt="Photo de Léa SEMIRAMOTH" aria-label="Photo de Léa SEMIRAMOTH"
+                                class="members-img-page lazyload">
+                            <h1 class="members-name-page">Léa SEMIRAMOTH</h1>
+                            <h2 class="members-function-page">Contributrice</h2>
+                        </header>
+                        <div class="members-profile-page" style="text-align:left">
+                            <p style="text-align:left">Développeuse Web & App</p>
+                            <p>#METEORJS - #REACT - #PHP</p>
+                            <p class="members-function-page"><img src="../images/melee-logo.gif" alt="Logo La Mélée"
+                                aria-label="Logo La Mélée" class="entreprise w3-circle lazyload"> Etudiante ISTEF - La Mélée (alternance)</p>
+                        </div>
+                        <div class="members-date-page">
+                            <p>Membre depuis Décembre 2017</p>
+                        </div>
+                        <div class="members-social-page">
+                                <div class="w3-col s4 m4 l4">
+                                    <a href="https://ksl-webdesign.com/ "><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+                                </div>
+                            <div class="w3-col s4 m4 l4">
+                                <a href="https://twitter.com/LeaSemiramoth"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="w3-col s4 m4 l4">
+                                <a href="https://www.linkedin.com/in/l%C3%A9a-semiramoth-818887108/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="w3-col s12 m2 l2" style="padding-bottom:20px">
+                    <aside class="members-card-page">
+                        <header class="members-view-page">
+                            <img src="../images/florian-small.jpg" alt="Photo de Florian BELLAZOUZ" aria-label="Photo de Florian BELLAZOUZ"
+                                class="members-img-page lazyload">
+                            <h1 class="members-name-page">Florian BELLAZOUZ</h1>
+                            <h2 class="members-function-page">Membre</h2>
+                            <p class="members-function-page"><img src="../images/jsandco-logo.gif" alt="Logo JS&Co"
+                                    aria-label="Logo JS&Co" class="members-founder w3-circle lazyload"> Co-Fondateur</p>
+                        </header>
+                        <div class="members-profile-page" style="text-align:left">
+                            <p style="text-align:left">Développeur Web & App</p>
+                            <p>#WEBSOCKET - #KAAAROTT</p>
+                            <p class="members-function-page"><img src="../images/kaaarot-logo.gif" alt="Logo Kaaarot"
+                                aria-label="Logo Kaaarot" class="entreprise w3-circle lazyload"> KAAAROT - CEO</p>
+                        </div>
+                        <div class="members-date-page">
+                            <p>Membre depuis Septembre 2016</p>
+                        </div>
+                        <div class="members-social-page">
+                                <div class="w3-col s4 m4 l4">
+                                    <a href="http://kaaarot.com/"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+                                </div>
+                            <div class="w3-col s4 m4 l4">
+                                <a href="https://twitter.com/FlorianBellazou?lang=fr"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="w3-col s4 m4 l4">
+                                <a href="https://www.linkedin.com/in/florian-bellazouz-39b9b14b/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="w3-col s12 m2 l2" style="padding-bottom:20px">
+                    <aside class="members-card-page">
+                        <header class="members-view-page">
+                            <img src="../images/olivier-small.jpg" alt="Photo de Olivier MANGIN" aria-label="Photo de Olivier MANGIN"
+                                class="members-img-page lazyload">
+                            <h1 class="members-name-page">Olivier MANGIN</h1>
+                            <h2 class="members-function-page">Contributeur</h2>
+                        </header>
+                        <div class="members-profile-page" style="text-align:left">
+                            <p style="text-align:left">Développeur Web & App</p>
+                            <p>#METEORJS - #REACT - #ADMIN-SYS</p>
+                            <p class="members-function-page"><img src="../images/makeit-logo.gif" alt="Logo Make-it"
+                                aria-label="Logo Make-it" class="entreprise w3-circle lazyload"> Make-it - CEO</p>
+                        </div>
+                        <div class="members-date-page">
+                            <p>Membre depuis Février 2018</p>
+                        </div>
+                        <div class="members-social-page">
+                                <div class="w3-col s6 m6 l6">
+                                    <a href="https://make-it.fr/"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+                                </div>
+                            <div class="w3-col s6 m6 l6">
+                                <a href="https://www.linkedin.com/in/olivier-mangin-9479b3146/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="w3-container">
+            <div class="w3-quarter w3-center">
+                <div class="become-members">
+                    <h4 class="become-members-title">Rejoindre JS <span class="esperluette">&amp;</span> Co</h4>
+                    <h6>Vous souhaitez rejoindre notre association et participer à nos différents évènements</h6>
+                </div>
+                <div class="become-members-btn-section">
+                    <a href=""><button class="become-members-btn">Devenir Membre</button></a>
+                </div>
+            </div>
+            <div class="w3-quarter w3-center">
+                <h4 class="sitemap">SiteMap</h4>
+                <ul>
+                    <li><a href="../../index.html#about" class="menu-link" style="width:16.66%">About</a></li>
+                    <li><a href="../../index.html#members" class="menu-link" style="width:16.66%">Members</a></li>
+                    <li><a href="../../index.html#events" class="menu-link" style="width:16.66%">Events</a></li>
+                    <li><a href="../../index.html#jsbc" class="menu-link" style="width:16.66%">JS&BC</a></li>
+                    <li> <a href="../../index.html#partners" class="menu-link" style="width:16.66%">Partners</a></li>
+                    <li><a href="../../index.html#contact" class="menu-link" style="width:16.66%">Contact</a></li>
+                </ul>
+            </div>
+            <div class="w3-quarter w3-center">
+                <h4 class="become-members-title">Derniers Evénements</h4>
+                <ul>
+                    <li class="footer-last-events" style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417283/">JS
+                            & BATTLE / BATTLEDEV 2018</a></li>
+                    <li class="footer-last-events" style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417085/">LA
+                            TETE DANS LES ETOILES, LE CODE DANS METEOR</a></li>
+                    <li class="footer-last-events" style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/252191176/">DE
+                            NODEJS A METEOR : OBSTACLES ET EVOLUTION</a></li>
+                </ul>
+            </div>
+            <div class="w3-quarter w3-center">
+                <h4 class="follow">Nous suivre</h4>
+                <ul>
+                    <li style="padding-bottom:5px">
+                        <a href="https://twitter.com/JS_and_Co?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                            data-size="large" data-lang="fr" data-dnt="true" data-show-count="false">Follow @JS_and_Co</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </li>
+                    <li style="padding-bottom:10px">
+                        <div class="fb-like" data-href="https://www.facebook.com/js.and.co.association/" data-layout="button"
+                            data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+                    </li>
+                    <li style="padding-bottom:5px">
+                        <div class="g-ytsubscribe" data-channelid="UCjxZWyxGIR3Yx8Lb1Sc-ukA" data-layout="default"
+                            data-count="hidden"></div>
+                    </li>
+                    <li style="padding-bottom:10px">
+                        <a class="github-button" href="https://github.com/jsandco" data-size="large" aria-label="Follow @jsandco on GitHub">Follow
+                            @jsandco</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="subfooter-section">
+            <div class="w3-content w3-container w3-center subfooter">
+                <p class="subfooter-text">&copy; Javascript & Co 2018 || Developed & Designed with &hearts;
+                    <br> by Mexar and JMWebdesign. || <a href="mentions.html" class="mentions">Mentions
+                        Légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/lazysizes.min.js" async defer></script>
+    <script src="https://www.w3schools.com/lib/w3.js" async defer></script>
+    <script src="../js/app.js" async defer></script>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.2';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>

@@ -127,6 +127,55 @@ section {
 }
 
 
+/* ----- Sticky Navbar ----- */
+
+
+#navBar {
+    overflow: hidden;
+    background-color: #090A15;
+    z-index: 1;
+}
+
+#navBar a {
+    float: left;
+    display: block;
+    color: #FFDB00;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+#navBar a:hover {
+    background-color: #FFDB00;
+    color: #090A15;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+
+#navBar a.active {
+    background-color: #FFDB00;
+    color: #090A15;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+
 /* ----- FOOTER ----- */
 
 #footer {
@@ -223,6 +272,83 @@ section {
     transition: .7s;
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+
+/* ----- HERO ----- */
+
+#hero {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #FFDB00;
+    color: #22292F;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 4px solid #22292F;
+}
+
+.esperluette-hero {
+    color: #FFF;
+}
+
+.hero-container {
+    position: absolute;
+    margin-top: 25%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    position: relative;
+    display: block;
+    line-height: .75;
+    text-shadow: 0 8px 4px rgba(0, 0, 0, 0.4);
+    letter-spacing: -10px;
+}
+
+.hero-textBlock1 {
+    z-index: 3;
+    font-weight: bold;
+    font-size: 10em;
+    background-color: #FFDB00;
+    transform: skewY(-5deg);
+}
+
+.hero-textBlock2 {
+    height: 50px;
+    z-index: 2;
+    font-weight: 100;
+    font-size: 1.5em;
+    letter-spacing: 12px;
+    background-color: #22292F;
+    color: #FFF;
+    padding-left: 12px;
+    line-height: 2.2em;
+    transform: skewY(-5deg);
+}
+
+.hero-textBlock3,
+.hero-textBlock5 {
+    height: 80px;
+    line-height: 80px;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 5em;
+    letter-spacing: 10px;
+    background-color: #FFDB00;
+    transform: skewY(-5deg);
+}
+
+.hero-textBlock4 {
+    height: 80px;
+    line-height: 80px;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 5em;
+    letter-spacing: 10px;
+    background-color: #22292F;
+    color: #FFDB00;
+    transform: skewY(-5deg);
 }
 
 
