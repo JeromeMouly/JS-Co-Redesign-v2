@@ -52,6 +52,29 @@ section {
     color: #FFDB00;
 }
 
+.esperluette-bar {
+    width: 200px;
+    height: 4px;
+    background-color: #0F101A;
+    margin: 0 auto;
+}
+
+.esperluette-circle {
+    content: '&';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0F101A;
+    color: #FFDB00;
+    margin: 0 auto;
+    margin-top: -17px;
+}
+
+.esperluette-incircle {
+    line-height: 30px;
+    font-weight: 200;
+}
+
 .esperluette-bar2 {
     width: 200px;
     height: 4px;
@@ -283,7 +306,7 @@ section {
 }
 
 .become-members-btn:hover {
-    color: #FFF;
+    color: white;
     text-shadow: 0 2px 1px rgba(0, 0, 0, 0.7);
 }
 
@@ -327,6 +350,13 @@ section {
     text-transform: uppercase;
 }
 
+.menu-link:hover {
+    background-color: #FFDB00;
+    color: #090A15;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
 
 
 /* ----- About ----- */
@@ -418,7 +448,7 @@ hr.about-divider-title {
     /*100%*/
     height: 100%;
     background: #FFDB00;
-    border: 2px solid #22292F;
+    border: 2px solid #0F101A;
     transition: .5s;
     transform-origin: left;
     transform: perspective(2000px) rotateY(-90deg);
@@ -482,6 +512,65 @@ hr.about-divider-title {
 
 .event-card-block .event-details .event-text-block ul li a:hover {
     background: #ff3636;
+}
+
+.event-btn-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.event-btn {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #090A15;
+    color: #090A15;
+    padding: 8px 10px;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 5px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border: 4px solid #FFDB00;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+.event-btn:before {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFDB00;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.event-btn:hover:before {
+    top: -50%;
+}
+
+.event-btn:hover {
+    color: #FFF;
+}
+
+.event-btn:after {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #FFDB00;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.event-btn:hover:after {
+    bottom: -50%;
 }
 
 
@@ -656,195 +745,6 @@ hr.about-divider-title {
 }
 
 
-/* ----- MEMBERS PAGE ----- */
-
-#members-page {
-    width: 100%;
-    height: 100%;
-    background-color: #F5F5F5;
-    color: #0F101A;
-}
-
-.members-card-page {
-    background-color: #0F101A;
-    color: #ffdb00 !important;
-}
-
-.members-view-page .members-img-page {
-    border-radius: 50%;
-    margin: 20px auto;
-    display: block;
-    width: 200px;
-    border: 3px solid #FFDB00;
-}
-
-.members-card-page {
-    border-radius: 25% 5%;
-    margin: 0 auto;
-    display: block;
-    height: 250px;
-    width: 250px;
-    background: #0F101A;
-    overflow: hidden;
-    box-shadow: 0 0 6px 2px #0F101A;
-    transition: all ease 0.3s;
-}
-
-.members-card-page:hover {
-    border-radius: 5px;
-    height: 700px;
-    width: 315px;
-    box-shadow: 0 0 10px 4px #0F101A;
-}
-
-.members-card-page:hover .members-view-page .members-img-page {
-    animation: profile_image 2000ms linear both;
-    animation-delay: 0.5s;
-}
-
-.members-view-page .members-name-page {
-    position: relative;
-    text-align: center;
-    color: #FFDB00;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-    font-size: 25px;
-    line-height: 25px;
-    display: inline-block;
-    padding: 10px;
-    transition: all ease 0.250s;
-    border-top: 1px solid #FFDB00;
-    border-bottom: 1px solid #FFDB00;
-}
-
-.members-card-page:hover .members-view-page .members-name-page {
-    margin-top: 0px;
-    outline: 0 solid #FFDB00;
-    border-top: 0px solid #FFDB00;
-    border-bottom: 1px solid #FFDB00;
-}
-
-.members-view-page .members-function-page {
-    text-align: center;
-    color: #FFDB00;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-    font-size: 17px;
-    font-weight: normal;
-    line-height: 0px;
-    margin: 0;
-}
-
-.members-profile-page {
-    margin-top: 20px;
-    padding: 1px 20px 10px 20px !important;
-    transition: all linear 1.5s;
-    color: #FFDB00;
-    font-size: 14px;
-    opacity: 0;
-}
-
-.members-card-page:hover .members-profile-page {
-    opacity: 1;
-}
-
-.members-profile-page p:first-child {
-    text-align: center;
-    font-size: 16px;
-}
-
-.members-function-page {
-    color: #FFDB00;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    padding-top: 10px;
-}
-
-.members-profile-page {
-    margin-top: 20px;
-    padding: 1px 20px 10px 20px !important;
-    transition: all linear 1.5s;
-    color: #FFDB00;
-    font-size: 14px;
-    opacity: 0;
-}
-
-.members-founder {
-    width: 25px;
-    height: auto;
-}
-
-.members-date-page {
-    width: 100%;
-    height: auto;
-    background-color: #FFDB00;
-    color: #0F101A;
-    bottom: 0 !important;
-}
-
-.become-members-btn-section-page {
-    position: relative;
-    padding-top: 75px;
-}
-
-.become-members-btn-page {
-    width: 250px;
-    height: 50px;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: #FFDB00;
-    color: #FFDB00;
-    border: 2px solid #0F101A;
-    padding: 8px 10px;
-    text-align: center;
-    display: inline-block;
-    letter-spacing: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    text-shadow: 0 2px 1px rgba(255, 255, 255, 0.7);
-}
-
-.become-members-btn-page:hover {
-    color: #0F101A;
-    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.7);
-}
-
-.become-members-btn-page:before {
-    content: '';
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #0F101A;
-    z-index: -1;
-    transition: 0.3s;
-}
-
-.become-members-btn-page:hover:before {
-    top: -50%;
-}
-
-.become-members-btn-page:after {
-    content: '';
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #0F101A;
-    z-index: -1;
-    transition: 0.3s;
-}
-
-.become-members-btn-page:hover:after {
-    bottom: -50%;
-}
-
-
 /* ----- JSBC ----- */
 
 #jsbc {
@@ -877,6 +777,11 @@ hr.jsbc-separator {
 
 #partners {
     color: #FFF;
+}
+
+.partners-block-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .partners-block {
@@ -1017,4 +922,198 @@ hr.jsbc-separator {
     letter-spacing: 5px;
     text-transform: uppercase;
     font-family: 'Titillium Web', sans-serif;
+}
+
+
+/* ----- MODAL BECOME MEMBERS ----- */
+
+.become-members-modal {
+    color: #090A15;
+}
+
+#chooseNumbers .w3-dropdown-content {
+    width: 57px !important;
+}
+
+.close-btn-modal {
+    color: #FFDB00;
+    font-size: 2em;
+}
+
+.close-btn-modal:hover {
+    background-color: #FFDB00 !important;
+    color: #0F101A !important;
+    height: 65px;
+    font-size: 2em;
+}
+
+.become-members-modal-header,
+.become-members-modal-footer {
+    background-color: #0F101A;
+    color: #FFDB00;
+}
+
+.modal-btn {
+    background-color: #0F101A;
+    color: #FFDB00;
+}
+
+.modal-btn:hover {
+    background-color: #FFDB00 !important;
+    color: #0F101A !important;
+}
+
+.breadcrumb-modal-become-members {
+    display: inline-block;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    counter-reset: flag;
+    width: 100%;
+}
+
+.breadcrumb-modal-become-members a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 36px;
+    padding: 0 10px 0 60px;
+    position: relative;
+}
+
+.breadcrumb-modal-become-members a:first-child {
+    padding-left: 46px;
+}
+
+.breadcrumb-modal-become-members a:first-child:before {
+    left: 14px;
+}
+
+.breadcrumb-modal-become-members a:last-child {
+    padding-right: 20px;
+}
+
+.breadcrumb-modal-become-members a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -18px;
+    width: 36px;
+    height: 36px;
+    transform: scale(0.707) rotate(45deg);
+    z-index: 1;
+    box-shadow: 2px -2px 0 2px rgba(34, 41, 47, 0.8), 3px -3px 0 2px rgba(255, 219, 0, 0.2);
+    border-radius: 0 5px 0 50px;
+}
+
+.breadcrumb-modal-become-members a:last-child:after {
+    content: none;
+}
+
+.flat a,
+.flat a:after {
+    background: white;
+    color: #0F101A;
+    transition: all 0.5s;
+}
+
+.flat a:before {
+    background: white;
+    box-shadow: 0 0 0 1px #ccc;
+}
+
+.flat a:hover,
+.flat a.active,
+.flat a:hover:after,
+.flat a.active:after {
+    background: #FFDB00;
+    color: #0F101A;
+}
+
+.validate-btn-modal {
+    width: 250px;
+    height: 35px;
+    background-color: #FFDB00;
+    color: #0F101A;
+    border: #FFDB00;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+
+.add-btn-modal {
+    width: 150px;
+    height: 40px;
+    background-color: #0F101A;
+    color: #FFDB00;
+    border: #FFDB00;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.total {
+    width: 100%;
+    height: 80px;
+    line-height: 60px;
+    background-color: #FFDB00;
+    color: #0F101A;
+}
+
+.container {
+    display: inline-flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #FFDB00;
+    border-radius: 50%;
+}
+
+.container:hover input~.checkmark {
+    background-color: #0F101A;
+}
+
+.container input:checked~.checkmark {
+    background-color: #0F101A;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FFDB00;
 }

@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|Titillium+Web:200,300,400,600,700,900');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #F8FAFC;
+    color: #22292F;
+}
+
+a {
+    text-decoration: none
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+.title-section {
+    padding-top: 84px;
+    font-weight: bold;
+}
+
+.esperluette,
+.esperluette-members {
+    color: #FFDB00;
+}
+
+.esperluette-hero,
+.esperluette-contact,
+.dollars {
+    color: #FFF;
+}
+
+.esperluette-bar {
+    width: 200px;
+    height: 4px;
+    background-color: #22292F;
+    margin: 0 auto;
+}
+
+.esperluette-circle {
+    content: '&';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #22292F;
+    color: #FFDB00;
+    margin: 0 auto;
+    margin-top: -17px;
+}
+
+.esperluette-incircle {
+    line-height: 30px;
+    font-weight: 200;
+}
+
+.esperluette-bar2 {
+    width: 200px;
+    height: 4px;
+    background-color: #FFDB00;
+    margin: 0 auto;
+}
+
+.esperluette-circle2 {
+    content: '&';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFDB00;
+    color: #22292F;
+    margin: 0 auto;
+    margin-top: -17px;
+}
+
+.esperluette-incircle2 {
+    line-height: 30px;
+    font-weight: 200;
+}
+
+hr.about-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #090A15;
+    opacity: 0.75;
+    border: none;
+}
+
+
+/* ----- TOPBAR ----- */
+
+#topBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 45px;
+    background-color: #FFDB00;
+    color: #FFFFFF;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-shadow: 0 4px 2px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+
+/* ----- NAVIGATION ----- */
+
+#firstMenu {
+    top: 50px !important;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    line-height: 35px;
+    background-color: #090A15;
+    color: #FFDB00;
+    font-size: 1.25rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#navBar {
+    top: 50px !important;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    line-height: 35px;
+    background-color: #090A15;
+    color: #FFDB00;
+    font-size: 1.25rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.menu-link:hover {
+    height: 50px;
+    transition: 1s;
+    color: #090A15;
+    background-color: #FFDB00 !important;
+    border: 2px solid #090A15;
+    font-weight: 400;
+    letter-spacing: 10px;
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.burger-menu {
+    color: #FFDB00;
+}
+
+.burger-menu:hover {
+    background-color: #FFDB00 !important;
+    color: #090A15 !important;
+    border-top: 2px solid #090A15;
+}
+
+
+/* ----- FOOTER ----- */
+
+#footer {
+    bottom: 0;
+    background-color: #0F101A;
+    color: white;
+    border-top: 4px solid #FFDB00;
+}
+
+.footer-last-events:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.subfooter-section {
+    background-color: #ffdb00;
+    color: #0F101A;
+    width: 100%;
+    height: 55px;
+}
+
+.subfooter {
+    font-size: 0.75em;
+}
+
+.twitter-block {
+    width: 100%;
+    height: 200px;
+}
+
+.become-members-btn-section {
+    position: relative;
+    padding-top: 50px;
+}
+
+.become-members-btn {
+    width: 250px;
+    height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #0F101A;
+    color: #0F101A;
+    border: 2px solid #FFDB00;
+    padding: 8px 10px;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+.become-members-btn:hover {
+    color: #FFF;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+.become-members-btn:before {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFDB00;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.become-members-btn:hover:before {
+    top: -50%;
+}
+
+.become-members-btn:after {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #FFDB00;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.become-members-btn:hover:after {
+    bottom: -50%;
+}
+
+.mentions:hover {
+    background-color: #0F101A;
+    color: #FFDB00;
+    transition: .7s;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.menu-link:hover {
+    background-color: #FFDB00;
+    color: #090A15;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+
+/* ----- MEMBERS PAGE ----- */
+
+#members-page {
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+    color: #0F101A;
+}
+
+.members-section {
+    height: 100%;
+}
+
+.members-card-page {
+    background-color: #0F101A;
+    color: #ffdb00 !important;
+}
+
+.members-view-page .members-img-page {
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    border: 3px solid #FFDB00;
+}
+
+.members-card-page {
+    border-radius: 25% 5%;
+    margin: 0 auto;
+    display: block;
+    height: 250px;
+    width: 250px;
+    background: #0F101A;
+    overflow: hidden;
+    box-shadow: 0 0 6px 2px #0F101A;
+    transition: all ease 0.3s;
+}
+
+.members-card-page:hover {
+    border-radius: 5px;
+    height: 700px;
+    width: 315px;
+    box-shadow: 0 0 10px 4px #0F101A;
+}
+
+.members-card-page:hover .members-view-page .members-img-page {
+    animation: profile_image 2000ms linear both;
+    animation-delay: 0.5s;
+}
+
+.members-view-page .members-name-page {
+    position: relative;
+    text-align: center;
+    color: #FFDB00;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 10px;
+    transition: all ease 0.250s;
+    border-top: 1px solid #FFDB00;
+    border-bottom: 1px solid #FFDB00;
+}
+
+.members-card-page:hover .members-view-page .members-name-page {
+    margin-top: 0px;
+    outline: 0 solid #FFDB00;
+    border-top: 0px solid #FFDB00;
+    border-bottom: 1px solid #FFDB00;
+}
+
+.members-view-page .members-function-page {
+    text-align: center;
+    color: #FFDB00;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 0px;
+    margin: 0;
+}
+
+.members-profile-page {
+    margin-top: 20px;
+    padding: 1px 20px 10px 20px !important;
+    transition: all linear 1.5s;
+    color: #FFDB00;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.members-card-page:hover .members-profile-page {
+    opacity: 1;
+}
+
+.members-profile-page p:first-child {
+    text-align: center;
+    font-size: 16px;
+}
+
+.members-function-page {
+    color: #FFDB00;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 10px;
+}
+
+.members-profile-page {
+    margin-top: 20px;
+    padding: 1px 20px 10px 20px !important;
+    transition: all linear 1.5s;
+    color: #FFDB00;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.members-founder {
+    width: 25px;
+    height: auto;
+}
+
+.members-date-page {
+    width: 100%;
+    height: auto;
+    background-color: #FFDB00;
+    color: #0F101A;
+    bottom: 0 !important;
+}
+
+.become-members-btn-section-page {
+    position: relative;
+    padding-top: 75px;
+}
+
+.become-members-btn-page {
+    width: 250px;
+    height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #FFDB00;
+    color: #FFDB00;
+    border: 2px solid #0F101A;
+    padding: 8px 10px;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-shadow: 0 2px 1px rgba(255, 255, 255, 0.7);
+}
+
+.become-members-btn-page:hover {
+    color: #0F101A;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+.become-members-btn-page:before {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0F101A;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.become-members-btn-page:hover:before {
+    top: -50%;
+}
+
+.become-members-btn-page:after {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #0F101A;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.become-members-btn-page:hover:after {
+    bottom: -50%;
+}
