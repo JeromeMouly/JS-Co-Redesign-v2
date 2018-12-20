@@ -284,194 +284,32 @@ hr.about-divider {
     transition: 0.7s;
 }
 
-/* ----- MEMBERS PAGE ----- */
 
-#members-page {
-    width: 100%;
-    height: 100%;
-    background-color: #F5F5F5;
-    color: #0F101A;
+/* ----- Job Pages ----- */
+
+.job1-block {
+    background-color:white;
+    margin-bottom: 5px;
 }
 
-.members-section {
-    height: 100%;
+.job-logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.members-card-page {
+.location {
+    margin-top: 15px;
+    padding-top: 8px;
+    font-size: 2rem;
     background-color: #0F101A;
-    color: #ffdb00 !important;
-}
-
-.members-view-page .members-img-page {
+    color: #FFDB00;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    margin: 20px auto;
-    display: block;
-    width: 200px;
-    border: 3px solid #FFDB00;
 }
 
-.members-card-page {
-    border-radius: 25% 5%;
-    margin: 0 auto;
-    display: block;
-    height: 250px;
-    width: 250px;
-    background: #0F101A;
-    overflow: hidden;
-    box-shadow: 0 0 6px 2px #0F101A;
-    transition: all ease 0.3s;
-}
-
-.members-card-page:hover {
-    border-radius: 5px;
-    height: 700px;
-    width: 315px;
-    box-shadow: 0 0 10px 4px #0F101A;
-}
-
-.members-card-page:hover .members-view-page .members-img-page {
-    animation: profile_image 2000ms linear both;
-    animation-delay: 0.5s;
-}
-
-.members-view-page .members-name-page {
-    position: relative;
-    text-align: center;
-    color: #FFDB00;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-    font-size: 25px;
-    line-height: 25px;
-    display: inline-block;
-    padding: 10px;
-    transition: all ease 0.250s;
-    border-top: 1px solid #FFDB00;
-    border-bottom: 1px solid #FFDB00;
-}
-
-.members-card-page:hover .members-view-page .members-name-page {
-    margin-top: 0px;
-    outline: 0 solid #FFDB00;
-    border-top: 0px solid #FFDB00;
-    border-bottom: 1px solid #FFDB00;
-}
-
-.members-view-page .members-function-page {
-    text-align: center;
-    color: #FFDB00;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-    font-size: 17px;
-    font-weight: normal;
-    line-height: 0px;
-    margin: 0;
-}
-
-.members-profile-page {
-    margin-top: 20px;
-    padding: 1px 20px 10px 20px !important;
-    transition: all linear 1.5s;
-    color: #FFDB00;
-    font-size: 14px;
-    opacity: 0;
-}
-
-.members-card-page:hover .members-profile-page {
-    opacity: 1;
-}
-
-.members-profile-page p:first-child {
-    text-align: center;
-    font-size: 16px;
-}
-
-.members-function-page {
-    color: #FFDB00;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    padding-top: 10px;
-}
-
-.members-profile-page {
-    margin-top: 20px;
-    padding: 1px 20px 10px 20px !important;
-    transition: all linear 1.5s;
-    color: #FFDB00;
-    font-size: 14px;
-    opacity: 0;
-}
-
-.members-founder {
-    width: 25px;
-    height: auto;
-}
-
-.members-date-page {
-    width: 100%;
-    height: auto;
-    background-color: #FFDB00;
-    color: #0F101A;
-    bottom: 0 !important;
-}
-
-.become-members-btn-section-page {
-    position: relative;
-    padding-top: 75px;
-}
-
-.become-members-btn-page {
-    width: 250px;
-    height: 50px;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: #FFDB00;
-    color: #FFDB00;
-    border: 2px solid #0F101A;
-    padding: 8px 10px;
-    text-align: center;
-    display: inline-block;
-    letter-spacing: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    text-shadow: 0 2px 1px rgba(255, 255, 255, 0.7);
-}
-
-.become-members-btn-page:hover {
-    color: #0F101A;
-    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.7);
-}
-
-.become-members-btn-page:before {
-    content: '';
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
+.annonce-btn {
     background-color: #0F101A;
-    z-index: -1;
-    transition: 0.3s;
-}
-
-.become-members-btn-page:hover:before {
-    top: -50%;
-}
-
-.become-members-btn-page:after {
-    content: '';
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #0F101A;
-    z-index: -1;
-    transition: 0.3s;
-}
-
-.become-members-btn-page:hover:after {
-    bottom: -50%;
+    color: #FFDB00;
+    margin-bottom: 10px;
 }

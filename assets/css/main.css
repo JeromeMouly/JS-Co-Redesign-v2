@@ -607,13 +607,15 @@ hr.about-divider-title {
     padding-top: 10px;
 }
 
-.members-btn-section {
+.members-btn-section,
+.job-btn-section {
     padding-top: 80px;
     padding-bottom: 100px;
     position: relative;
 }
 
-.members-btn {
+.members-btn,
+.job-btn {
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
@@ -630,7 +632,8 @@ hr.about-divider-title {
     text-shadow: 0 2px 1px rgba(0, 0, 0, 0.7);
 }
 
-.members-btn:before {
+.members-btn:before,
+.job-btn:before {
     content: '';
     width: 100%;
     height: 50%;
@@ -642,15 +645,18 @@ hr.about-divider-title {
     transition: 0.3s;
 }
 
-.members-btn:hover:before {
+.members-btn:hover:before,
+.job-btn:hover:before {
     top: -50%;
 }
 
-.members-btn:hover {
+.members-btn:hover,
+.job-btn:hover {
     color: #FFF;
 }
 
-.members-btn:after {
+.members-btn:after,
+.job-btn:after {
     content: '';
     width: 100%;
     height: 50%;
@@ -662,7 +668,8 @@ hr.about-divider-title {
     transition: 0.3s;
 }
 
-.members-btn:hover:after {
+.members-btn:hover:after,
+.job-btn:hover:after {
     bottom: -50%;
 }
 
