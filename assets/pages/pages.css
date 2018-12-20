@@ -137,7 +137,6 @@ hr.about-divider {
     color: #FFDB00;
     font-size: 1.25rem;
     font-weight: 100;
-    text-transform: uppercase;
 }
 
 #navBar {
@@ -150,7 +149,6 @@ hr.about-divider {
     color: #FFDB00;
     font-size: 1.25rem;
     font-weight: 100;
-    text-transform: uppercase;
 }
 
 .menu-link:hover {
@@ -283,6 +281,7 @@ hr.about-divider {
     text-transform: uppercase;
     transition: 0.7s;
 }
+
 
 /* ----- MEMBERS PAGE ----- */
 
@@ -474,4 +473,228 @@ hr.about-divider {
 
 .become-members-btn-page:hover:after {
     bottom: -50%;
+}
+
+
+/* ----- Job Pages ----- */
+
+.job1-block {
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.job-logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.location {
+    margin-top: 15px;
+    padding-top: 8px;
+    font-size: 2rem;
+    background-color: #0F101A;
+    color: #FFDB00;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.annonce-btn {
+    background-color: #0F101A;
+    color: #FFDB00;
+    margin-bottom: 10px;
+}
+
+
+/* ----- MODAL BECOME MEMBERS ----- */
+
+.become-members-modal {
+    color: #090A15;
+}
+
+#chooseNumbers .w3-dropdown-content {
+    width: 57px !important;
+}
+
+.close-btn-modal {
+    color: #FFDB00;
+    font-size: 2em;
+}
+
+.close-btn-modal:hover {
+    background-color: #FFDB00 !important;
+    color: #0F101A !important;
+    height: 65px;
+    font-size: 2em;
+}
+
+.become-members-modal-header,
+.become-members-modal-footer {
+    background-color: #0F101A;
+    color: #FFDB00;
+}
+
+.modal-btn {
+    background-color: #0F101A;
+    color: #FFDB00;
+}
+
+.modal-btn:hover {
+    background-color: #FFDB00 !important;
+    color: #0F101A !important;
+}
+
+.breadcrumb-modal-become-members {
+    display: inline-block;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    counter-reset: flag;
+    width: 100%;
+}
+
+.breadcrumb-modal-become-members a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 36px;
+    padding: 0 10px 0 60px;
+    position: relative;
+}
+
+.breadcrumb-modal-become-members a:first-child {
+    padding-left: 46px;
+}
+
+.breadcrumb-modal-become-members a:first-child:before {
+    left: 14px;
+}
+
+.breadcrumb-modal-become-members a:last-child {
+    padding-right: 20px;
+}
+
+.breadcrumb-modal-become-members a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -18px;
+    width: 36px;
+    height: 36px;
+    transform: scale(0.707) rotate(45deg);
+    z-index: 1;
+    box-shadow: 2px -2px 0 2px rgba(34, 41, 47, 0.8), 3px -3px 0 2px rgba(255, 219, 0, 0.2);
+    border-radius: 0 5px 0 50px;
+}
+
+.breadcrumb-modal-become-members a:last-child:after {
+    content: none;
+}
+
+.flat a,
+.flat a:after {
+    background: white;
+    color: #0F101A;
+    transition: all 0.5s;
+}
+
+.flat a:before {
+    background: white;
+    box-shadow: 0 0 0 1px #ccc;
+}
+
+.flat a:hover,
+.flat a.active,
+.flat a:hover:after,
+.flat a.active:after {
+    background: #FFDB00;
+    color: #0F101A;
+}
+
+.validate-btn-modal {
+    width: 250px;
+    height: 35px;
+    background-color: #FFDB00;
+    color: #0F101A;
+    border: #FFDB00;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+
+.add-btn-modal {
+    width: 150px;
+    height: 40px;
+    background-color: #0F101A;
+    color: #FFDB00;
+    border: #FFDB00;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.total {
+    width: 100%;
+    height: 80px;
+    line-height: 60px;
+    background-color: #FFDB00;
+    color: #0F101A;
+}
+
+.container {
+    display: inline-flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #FFDB00;
+    border-radius: 50%;
+}
+
+.container:hover input~.checkmark {
+    background-color: #0F101A;
+}
+
+.container input:checked~.checkmark {
+    background-color: #0F101A;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FFDB00;
 }

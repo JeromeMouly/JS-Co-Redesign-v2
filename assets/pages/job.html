@@ -16,7 +16,7 @@
     <link rel="icon" href="../images/favicon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="job.css">
+        <link rel="stylesheet" href="pages.css">
         <link rel="stylesheet" href="../css/animation.css">
         <link rel="stylesheet" href="../css/responsive.css">
         <link rel="stylesheet" href="../css/scrollbar.css">
@@ -27,6 +27,116 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+    <!-- MODAL BECOME MEMBERS -->
+    <div id="becomeMembers" class="w3-modal become-members-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container become-members-modal-header">
+                <span onclick="document.getElementById('becomeMembers').style.display='none'" class="w3-button w3-display-topright close-btn-modal">&times;</span>
+                <h2>Devenir Membre et/ou Faire un Don</h2>
+            </header>
+            <div class="">
+                <!-- <span onclick="document.getElementById('becomeMembers').style.display='none'" class="w3-button w3-display-topright">&times;</span> -->
+                <div class="breadcrumb-modal-become-members flat">
+                    <a href="#" class="active" style="width:25%"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;Choix
+                        de l'adhésion</a>
+                    <a href="#" style="width:25%"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Adhérents</a>
+                    <a href="#" style="width:25%"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Récapitulatif</a>
+                    <a href="#" style="width:25%"><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp;&nbsp;Finalisation</a>
+                </div>
+            </div>
+            <div class="w3-container become-members-modal-text">
+                <div class="become-members-payments">
+                    <h3><strong>Cotisation Membre</strong></h3>
+                    <div class="w3-col s12 m8 l8">
+                        <p>Vous devenez membre de JS&Co et obtenez des réductions aux formations et aux événements
+                            payants.</p>
+                    </div>
+                    <div class="w3-col s12 m2 l2 w3-center">
+                        <h2><strong>30 €</strong></h2>
+                    </div>
+                    <div class="w3-col s12 m2 l2 w3-center">
+                        <div class="w3-container w3-center" style="margin-top:15px">
+                            <select class="w3-select w3-border" name="option" style="background-color:#22292F;color:#FFDB00">
+                                <option value="0" disabled selected>Quantité</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="modal-divider">
+            <div class="w3-content w3-container w3-center">
+                <h3><strong>Avez-vous un code promo* ?</strong></h3>
+                <div class="w3-row w3-content w3-container w3-center">
+                    <div class="w3-twothird">
+                        <input class="w3-input w3-border" type="text" placeholder="Code Promo" style="width:268px;margin-left:205px">
+                    </div>
+                    <div class="w3-third" style="margin-left: -205px;">
+                        <button class="w3-right add-btn-modal">Ajouter</button>
+                    </div>
+                </div>
+                <p>* Attention, les codes promo ne sont pas valables pour les dons.</p>
+            </div>
+            <hr class="modal-divider">
+            <div class="w3-content w3-container w3-center">
+                <h3><strong>Souhaitez-vous ajouter un don à <span style="color:#FFDB00">JS&Co</span>
+                        en plus de votre adhésion ?</strong></h3>
+            </div>
+            <div class="w3-content w3-container w3-center">
+                <div class="w3-quarter">
+                    <label class="container">Pas de Don
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="w3-quarter">
+                    <label class="container">5 &euro;
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="w3-quarter">
+                    <label class="container">10 &euro;
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="w3-quarter">
+                    <label class="container">20 &euro;
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="w3-half">
+                    <label class="container">Montant de votre choix :
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="w3-half">
+                    <input class="w3-input w3-border" type="text" placeholder="Votre Montant">
+                </div>
+            </div>
+            <hr class="modal-divider">
+            <div class="w3-content w3-container total" style="text-align:right">
+                <h4 class="show-amount">Montant à payer pour la durée de l'adhésion : <span style="text-decoration:underline"><strong>0.00
+                            &euro;</strong></span></h4>
+            </div>
+            <footer class="w3-container become-members-modal-footer">
+                <button class="w3-right validate-btn-modal">Etape Suivante</button>
+            </footer>
+        </div>
+    </div>
 
     <!-- TOPBAR -->
     <div id="topBar" class="w3-row topbar">
@@ -39,9 +149,9 @@
     <div id="firstMenu" class="w3-top">
         <div class="w3-bar w3-center navbar">
             <a href="../../index.html#about" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">About</a>
-            <a href="../../index.html#members" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Members</a>
             <a href="../../index.html#events" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Events</a>
-            <a href="../../index.html#jsbc" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">JS&BC</a>
+            <a href="../../index.html#jsbc" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Js&Bc</a>
+            <a href="../../index.html#members" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Members</a>
             <a href="../../index.html#partners" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Partners</a>
             <a href="../../index.html#contact" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Contact</a>
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium burger-menu"
@@ -49,9 +159,9 @@
         </div>
         <div id="navBar" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
             <a href="../../index.html#about" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">About</a>
-            <a href="../../index.html#members" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">Members</a>
             <a href="../../index.html#events" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">Events</a>
-            <a href="../../index.html#jsbc" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">JS&BC</a>
+            <a href="../../index.html#jsbc" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">Js&Bc</a>
+            <a href="../../index.html#members" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">Members</a>
             <a href="../../index.html#partners" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">Partners</a>
             <a href="../../index.html#contact" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">Contact</a>
         </div>
@@ -82,7 +192,8 @@
                 <div class="w3-col m3  w3-white w3-center">
                     <i class="fa fa-map-marker location adresse" aria-hidden="true"></i>
                     <h4 class="adresse">Balma</h4>
-                    <a href="https://yoop.digital/2018/05/04/developpeur-applicatif-web-confirme/" class="w3-btn annonce-btn">Voir l'annonce</a>
+                    <a href="https://yoop.digital/2018/05/04/developpeur-applicatif-web-confirme/" class="w3-btn annonce-btn">Voir
+                        l'annonce</a>
                 </div>
             </div>
             <div class="w3-row w3-container w3-content w3-card-2 job1-block">
@@ -112,7 +223,8 @@
                 <div class="w3-col m3  w3-white w3-center">
                     <i class="fa fa-map-marker location" aria-hidden="true"></i>
                     <h4 class="adresse">Toulouse</h4>
-                    <a href="https://www.occitech.fr/blog/2018/10/recrutement-artisan-developpeur-euse-front/" class="w3-btn annonce-btn">Voir l'annonce</a>
+                    <a href="https://www.occitech.fr/blog/2018/10/recrutement-artisan-developpeur-euse-front/" class="w3-btn annonce-btn">Voir
+                        l'annonce</a>
                 </div>
             </div>
             <div class="w3-row w3-container w3-content w3-card-2 job1-block">
@@ -229,7 +341,7 @@
 
     <script src="../js/lazysizes.min.js" defer></script>
     <script src="https://www.w3schools.com/lib/w3.js" defer></script>
-    <script src="members.js" defer></script>
+    <script src="pages.js" defer></script>
     <div id="fb-root"></div>
     <script>
         (function (d, s, id) {
