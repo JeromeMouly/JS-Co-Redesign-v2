@@ -203,6 +203,48 @@ section {
     transform: skewY(-5deg);
 }
 
+.hero-arrow-down {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-arrow-down .arrow-down {
+    display: block;
+    margin: -10px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #0F101A;
+    border-right: 1px solid #0F101A;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+}
+
+.hero-arrow-down .arrow-down:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.hero-arrow-down .arrow-down:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
 
 /* ----- Sticky Navbar ----- */
 
